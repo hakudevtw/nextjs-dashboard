@@ -4,6 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { lusitana } from "@/app/ui/fonts";
 
+// default to false
+// will apply to all children, set to false in children to disable
+export const experimental_ppr = true;
+
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">

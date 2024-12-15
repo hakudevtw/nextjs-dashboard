@@ -60,3 +60,7 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
   - Server-Side Rendering and Initial Load: URL parameters can be directly consumed on the server to render the initial state, making it easier to handle server rendering
   - Analytics and Tracking: Having search queries and filters directly in the URL makes it easier to track user behavior without requiring additional client-side logic
 - As a general rule, if you want to read the params from the client, use the useSearchParams() hook as this avoids having to go back to the server.
+
+### pagination
+
+- you can fetch the data on the server, and pass it to the component as a prop

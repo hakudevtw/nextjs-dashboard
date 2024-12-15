@@ -14,7 +14,7 @@ import { useActionState } from "react";
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
-  const [state, formAction] = useActionState(createInvoice, initialState);
+  const [state, formAction, isPending] = useActionState(createInvoice, initialState);
 
   // in HTML, pass URL to action attribute, would be the destination where data should be submitted
   // in react, action is a special prop
@@ -147,7 +147,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         >
           Cancel
         </Link>
-        <Button type="submit">Create Invoice</Button>
+        <Button type="submit" disabled={isPending}>
+          Create Invoice
+        </Button>
       </div>
     </form>
   );

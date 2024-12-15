@@ -52,3 +52,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - most routes are not fully static or dynamic. For example, consider an ecommerce site. You might want to statically render the majority of the product information page, but you may want to fetch the user's cart and recommended products dynamically, this allows you show personalized content to your users.
 - holes in the context of Partial Prerendering are locations where dynamic content will load asynchonously
 - You may not see a difference in your application in development, but you should notice a performance improvement in production. Next.js will prerender the static parts of your route and defer the dynamic parts until the user requests them.
+
+## Search Queries
+
+- benefits of implementing search with URL params:
+  - Bookmarkable and Shareable URLs: Since the search parameters are in the URL, users can bookmark the current state of the application, including their search queries and filters, for future reference or sharing
+  - Server-Side Rendering and Initial Load: URL parameters can be directly consumed on the server to render the initial state, making it easier to handle server rendering
+  - Analytics and Tracking: Having search queries and filters directly in the URL makes it easier to track user behavior without requiring additional client-side logic
+- As a general rule, if you want to read the params from the client, use the useSearchParams() hook as this avoids having to go back to the server.

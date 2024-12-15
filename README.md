@@ -69,3 +69,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - UUIDs vs. Auto-incrementing Keys
   - UUIDs eliminate the risk of ID collision, are globally unique, and reduce the risk of enumeration attacks - making them ideal for large databases.
+- Form Validation
+  - Server-Side validation
+    - Ensure your data is in the expected format before sending it to your database.
+    - Reduce the risk of malicious users bypassing client-side validation.
+    - Have one source of truth for what is considered valid data.

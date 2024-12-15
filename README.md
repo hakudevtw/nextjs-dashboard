@@ -64,3 +64,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 ### pagination
 
 - you can fetch the data on the server, and pass it to the component as a prop
+
+### Others
+
+- UUIDs vs. Auto-incrementing Keys
+  - UUIDs eliminate the risk of ID collision, are globally unique, and reduce the risk of enumeration attacks - making them ideal for large databases.
